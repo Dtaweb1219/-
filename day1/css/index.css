@@ -1,0 +1,245 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  /* flexible 给我们划分了10等份 */
+  width: 10rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  background-color: #f2f2f2;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  /* 解决超链接图片边框问题 */
+  border: 0;
+  /* 清除图片自带的间隙 */
+  /* vertical-align: top; */
+}
+/* 若屏幕超过了750px,那么我们就按照750px设计稿来走，不会让我们页面超过750px 将html标签的fontsize设置为75px*/
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 32px !important;
+  }
+}
+.header {
+  position: relative;
+  width: 10rem;
+  height: 4.067rem;
+  background: url(../upload/StatusBar.png) no-repeat;
+  background-size: cover;
+}
+.user {
+  position: absolute;
+  top: 1.867rem;
+  left: 0.8rem;
+  width: 5.333rem;
+  height: 1.36rem;
+  /* background-color: skyblue; */
+}
+.userImg {
+  display: inline-block;
+  width: 1.333rem;
+  height: 1.333rem;
+  margin-right: 0.2rem;
+  text-align: center;
+}
+.userImg img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+}
+.user span {
+  font-size: 0.4rem;
+  color: #fff;
+  line-height: 1.36rem;
+  margin-bottom: 0.4rem;
+  vertical-align: top;
+}
+.banner {
+  margin-bottom: 0.266667rem;
+}
+.banner ul {
+  height: 2.76rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+.banner ul p {
+  font-size: 0.333333rem;
+}
+.banner ul li:nth-child(1) div {
+  width: 0.866667rem;
+  height: 0.866667rem;
+  margin: 0 auto;
+  background: url(../upload/上面精灵图.png) no-repeat -0.826667rem -0.653333rem;
+  background-size: 10.173333rem 2.88rem;
+}
+.banner ul li:nth-child(2) div {
+  width: 0.88rem;
+  height: 0.853333rem;
+  margin: 0 auto;
+  background: url(../upload/上面精灵图.png) no-repeat -3.333333rem -0.666667rem;
+  background-size: 10rem 2.88rem;
+}
+.banner ul li:nth-child(3) div {
+  width: 0.88rem;
+  height: 0.88rem;
+  margin: 0 auto;
+  background: url(../upload/上面精灵图.png) no-repeat -5.826667rem -0.653333rem;
+  background-size: 10rem 2.92rem;
+}
+.banner ul li:nth-child(4) div {
+  width: 0.866667rem;
+  height: 0.866667rem;
+  margin: 0 auto;
+  background: url(../upload/上面精灵图.png) no-repeat -8.346667rem -0.653333rem;
+  background-size: 10rem 2.88rem;
+}
+.exclusive {
+  padding-top: 0.666667rem;
+  background: #fff;
+}
+.exclusive h2 {
+  margin: 0;
+  padding-left: 0.4rem;
+  font-size: 0.4rem;
+  margin-bottom: 0.666667rem;
+}
+.exclusive ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.exclusive ul p {
+  font-size: 0.32rem;
+  text-align: center;
+}
+.exclusive ul li {
+  width: 2.5rem;
+  height: 2.226667rem;
+}
+.exclusive ul li:nth-child(1) .exclusive-icon {
+  width: 0.746667rem;
+  height: 0.773333rem;
+  margin: 0 auto;
+  background: url(../upload/中间精灵图.png) no-repeat -0.88rem -1.733333rem;
+  background-size: 10rem 5.906667rem;
+}
+.exclusive ul li:nth-child(2) .exclusive-icon {
+  width: 0.6rem;
+  height: 0.8rem;
+  margin: 0 auto;
+  background: url(../upload/中间精灵图.png) no-repeat -3.493333rem -1.733333rem;
+  background-size: 10rem 5.906667rem;
+}
+.exclusive ul li:nth-child(3) .exclusive-icon {
+  width: 0.666667rem;
+  height: 0.773333rem;
+  margin: 0 auto;
+  background: url(../upload/中间精灵图.png) no-repeat -5.893333rem -1.76rem;
+  background-size: 10rem 5.906667rem;
+}
+.exclusive ul li:nth-child(4) .exclusive-icon {
+  width: 0.746667rem;
+  height: 0.773333rem;
+  margin: 0 auto;
+  background: url(../upload/中间精灵图.png) no-repeat -8.426667rem -1.76rem;
+  background-size: 10rem 5.906667rem;
+}
+.exclusive ul li:nth-child(5) .exclusive-icon {
+  width: 0.746667rem;
+  height: 0.773333rem;
+  margin: 0 auto;
+  background: url(../upload/中间精灵图.png) no-repeat -0.88rem -3.706667rem;
+  background-size: 10rem 5.906667rem;
+}
+.exclusive ul li:nth-child(6) .exclusive-icon {
+  width: 0.666667rem;
+  height: 0.733333rem;
+  margin: 0 auto;
+  background: url(../upload/中间精灵图.png) no-repeat -3.453333rem -3.74667rem;
+  background-size: 10rem 5.906667rem;
+}
+.exclusive ul li:nth-child(7) .exclusive-icon {
+  width: 0.773333rem;
+  height: 0.693333rem;
+  margin: 0 auto;
+  background: url(../upload/中间精灵图.png) no-repeat -5.866667rem -3.746667rem;
+  background-size: 10rem 5.906667rem;
+}
+.consult {
+  box-sizing: border-box;
+  margin-top: 0.066667rem;
+  display: flex;
+  justify-content: space-around;
+  height: 3.52rem;
+  padding: 0.466667rem 0.426667rem 0.533333rem;
+  background-color: #fff;
+}
+.consult img {
+  width: 4.48rem;
+  height: 2.533333rem;
+}
+.consult img:nth-child(1) {
+  margin-right: 0.106667rem;
+}
+.consult img:nth-child(2) {
+  margin-left: 0.106667rem;
+}
+.button-nav {
+  border-top: 1px solid #b2b2b2;
+  height: 1.7rem;
+  background: #f7f7f7;
+}
+.button-nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 15px;
+}
+.button-nav ul p {
+  font-size: 0.266667rem;
+}
+.button-nav ul li:nth-child(1) .btn-icon {
+  width: 0.6rem;
+  height: 0.533333rem;
+  margin: 0 auto;
+  background: url(../upload/导航.png) no-repeat -0.933333rem -0.2rem;
+  background-size: 10rem 1.333333rem;
+}
+.button-nav ul li:nth-child(2) .btn-icon {
+  width: 0.6rem;
+  height: 0.6rem;
+  margin: 0 auto;
+  background: url(../upload/导航.png) no-repeat -3.466667rem -0.133333rem;
+  background-size: 10rem 1.333333rem;
+}
+.button-nav ul li:nth-child(3) .btn-icon {
+  width: 0.6rem;
+  height: 0.6rem;
+  margin: 0 auto;
+  background: url(../upload/导航.png) no-repeat -5.933333rem -0.133333rem;
+  background-size: 10rem 1.333333rem;
+}
+.button-nav ul li:nth-child(4) .btn-icon {
+  width: 0.6rem;
+  height: 0.6rem;
+  margin: 0 auto;
+  background: url(../upload/导航.png) no-repeat -8.44rem -0.16rem;
+  background-size: 10rem 1.333333rem;
+}
