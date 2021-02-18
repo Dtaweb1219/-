@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p>姓名 1</p>
+      <p>姓名 2</p>
+      <p>姓名 3</p>
+      <p>姓名 4</p>
+      <p>姓名 6</p>
+      <p>姓名 7</p>
+      <script>
+        const ps = document.querySelectorAll("p");
+        const div = document.querySelector("div");
+        let p = document.createElement("p");
+        p.innerHTML = "姓名 5";
+        div.insertBefore(p, ps[4]);
+        div.removeChild(div.children[div.children.length - 2]);
+      </script>
+    </div>
+  </body>
+</html>
